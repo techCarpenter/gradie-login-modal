@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+  <title>Sign Up | Gradie</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="photo-container">
+      <div class="photo-text">
+        <h1>Gradie</h1>
+        <p> Beautiful gradients in seconds. </p>
+      </div>
+      <img src="/images/iPhone Mockup.png" alt="iPhone mockup">
+    </div>
+    <div class="form-container">
+      <h1>Login</h1>
+      <form onsubmit="submitForm">
+        <label for="email"><strong>Email</strong></label>
+        <input type="email" name="email" id="email" placeholder="john@example.com" />
+        <label for="password"><strong>Password</strong></label>
+        <input type="password" name="password" id="password" placeholder="At least 8 characters" />
+        <div class="toc">
+          <input id="checkbox" type="checkbox" />
+          <label for="checkbox">By creating an account, you agree to the <a href="#">Terms & Conditions</a></label>
+        </div>
+        <input class="form-submit" type="submit" value="Create an Account" />
+      </form>
+    </div>
+  </div>
+  <script>
+    function submitForm(e) {
+      e.preventDefault;
+    }
+  </script>
+</body>
+
+</html>

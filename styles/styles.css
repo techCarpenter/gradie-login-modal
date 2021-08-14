@@ -1,0 +1,148 @@
+:root {
+  --theme-color: #013243;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  background-image: url("/images/Background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-content: center;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+a,
+a:visited,
+a:active,
+a:focus,
+a:hover {
+  color: var(--theme-color);
+  font-weight: 600;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo-container {
+  display: flex;
+  position: relative;
+  background-color: var(--theme-color);
+  width: 100%;
+  color: white;
+}
+
+.photo-text {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 3rem;
+}
+
+.photo-text p {
+  font-size: medium;
+  color: #88c1d5;
+  margin: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.form-container {
+  display: block;
+  width: 100%;
+  min-width: 300px;
+  background-color: white;
+  padding: 3rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+input {
+  width: 100%;
+  display: block;
+  padding: 0.7rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid gray;
+}
+
+label {
+  width: 100%;
+  display: block;
+  font-size: large;
+  margin: 1rem 0 0.3rem;
+}
+
+.form-submit {
+  background-color: var(--theme-color);
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+  border: none;
+  align-self: center;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.form-submit:hover {
+  cursor: pointer;
+}
+
+.toc {
+  margin-top: 2rem;
+}
+
+.toc > * {
+  display: inline;
+  width: auto;
+}
+
+@media screen and (min-width: 400px) and (max-width: 800px) {
+  .photo-container {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+  .form-container {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    border-radius: 1rem;
+    flex-direction: row;
+    max-width: 800px;
+    box-shadow: 0 0 56px rgba(17, 17, 17, 0.15);
+    align-items: stretch;
+  }
+  .container > * {
+    width: 50%;
+  }
+  .photo-container {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+  .form-container {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+}
