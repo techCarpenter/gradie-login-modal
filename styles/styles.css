@@ -58,10 +58,6 @@ a:hover {
   margin: 0;
 }
 
-button:hover {
-  cursor: pointer;
-}
-
 .form-container {
   display: block;
   width: 100%;
@@ -115,7 +111,7 @@ label {
   width: auto;
 }
 
-@media screen and (min-width: 400px) and (max-width: 800px) {
+@media screen and (min-width: 400px) and (max-width: 900px) {
   .photo-container {
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
